@@ -58,33 +58,31 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Column(
         children: [
           Expanded(
-            child: Container(
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
-                  const SizedBox(height: 50),
-                  Padding(
-                    padding: const EdgeInsets.all(20),
-                    child: Container(
-                      alignment: Alignment.centerLeft,
-                      child: Text(
-                        userQuestion,
-                        style: const TextStyle(fontSize: 35),
-                      ),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                const SizedBox(height: 50),
+                Padding(
+                  padding: const EdgeInsets.all(20),
+                  child: Container(
+                    alignment: Alignment.centerLeft,
+                    child: Text(
+                      userQuestion,
+                      style: const TextStyle(fontSize: 35),
                     ),
                   ),
-                  Padding(
-                    padding: const EdgeInsets.all(20.0),
-                    child: Container(
-                      alignment: Alignment.centerRight,
-                      child: Text(
-                        userAnswer,
-                        style: const TextStyle(fontSize: 35),
-                      ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(20.0),
+                  child: Container(
+                    alignment: Alignment.centerRight,
+                    child: Text(
+                      userAnswer,
+                      style: const TextStyle(fontSize: 35),
                     ),
                   ),
-                ],
-              ),
+                ),
+              ],
             ),
           ),
           Expanded(
